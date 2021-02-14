@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+	font-family: 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #15202B;
+	color: #fff;
+	text-shadow: 2px 2px 4px #000;
+	text-align: center;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #888;
+	width: 100vw;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+li {
+    margin: 5px 15px; 
+}
+/* 
+.navBar {
+	height: 100px;
+	background-color: #333;
+	color: whitesmoke;
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+*/
+
+input[type='submit'] {
+	padding: 10px;
+	border: 0;
+	margin: 5px;
+	border-radius: 20px;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.container .main-div {
+	width: 100%;
+	background-color: #15202B;
+	height: auto;
+	margin: 10px;
+	padding: 1px 0;
+	border-radius: 15px;
+	border: 1px solid #38A1F3
+}
+
+img {
+	height: 150px;
+	border-radius: 13px 13px 0 0;
+	width: 100%;
+	max-width: 800px;
+	/* border: 2px solid #38A1F3; */
+	box-shadow: 1px 1px 15px #363636;
+}
+
+.phone-btn {
+	color: rgb(255, 255, 255);
+	background-color: #38A1F3;
+	border: 0;
+	padding: 10px;
+	text-align: center;
+	width: 80%;
+	font-size:medium;
+	font-weight: bolder;
+	border-radius: 50px;
+	margin: 10px;
+	box-shadow: #000 -1px 1px 5px;
+	transition: all 1s;
+}
+
+.phone-btn:hover {
+	transform: scale(1.1);
+}
+
+h3, p {
+	margin: 15px 0;
+}
+.location {
+	padding: 10px;
+}
+
+.profile {
+	width: 50px;
+	height: 50px;
+	border: #38A1F3 2px solid;
+	border-radius: 100%;
+	box-shadow: #000 1px 1px 5px;
+}
+
+.profile.two{
+	transform: translateX(-5px);
+}
+
+.profile.three {
+	transform: translateX(-15px);
+}
+
+@media only screen and (max-width: 800px) {
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		background-color: #000;
+		width: 100vw;
+		height: 100%;
+	}
+	.container .main-div {
+		width: 50%;
+	}
+	nav {
+		flex-direction: column;
+	}
+  }
